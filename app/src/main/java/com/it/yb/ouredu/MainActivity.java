@@ -21,6 +21,8 @@ public class MainActivity extends Activity {
         tv1=findViewById(R.id.textView1);
         tv1.setText(h.getMsg()+" :  "+h.getTarget());
 
+
+
     }
 
 
