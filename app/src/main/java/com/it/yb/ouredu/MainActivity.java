@@ -22,6 +22,9 @@ public class MainActivity extends Activity {
         tv1.setText(h.getMsg()+" :  "+h.getTarget());
     }
 
+
+
+
     public void moveToLibraryActivity(View view) {
         Intent i=new Intent(this,MainHiActivity.class);
         startActivity(i);
