@@ -20,6 +20,7 @@ public class MainActivity extends Activity {
         h=new Hello("some message","050999888");
         tv1=findViewById(R.id.textView1);
         tv1.setText(h.getMsg()+" :  "+h.getTarget());
+
     }
 
 
