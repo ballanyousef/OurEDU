@@ -3,6 +3,13 @@ package com.it.yb.mylibrary;
 public class Mobile {
     private String owner;
     private String mobileNo;
+    private  String address;
+
+    public Mobile(String owner, String mobileNo, String address) {
+        this.owner = owner;
+        this.mobileNo = mobileNo;
+        this.address = address;
+    }
 
     public String getOwner() {
         return owner;
@@ -20,10 +27,12 @@ public class Mobile {
         this.mobileNo = mobileNo;
     }
 
-    public Mobile(String owner, String mobileNo) {
+    public String getAddress() {
+        return address;
+    }
 
-        this.owner = owner;
-        this.mobileNo = mobileNo;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     @Override
@@ -31,6 +40,7 @@ public class Mobile {
         return "Mobile{" +
                 "owner='" + owner + '\'' +
                 ", mobileNo='" + mobileNo + '\'' +
+                ", address='" + address + '\'' +
                 '}';
     }
 }
